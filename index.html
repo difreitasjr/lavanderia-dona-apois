@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lavanderia Dona Apôis — Lavanderia Automática 24h em Campinas | 3 Unidades</title>
+<meta name="description" content="Lavanderia automática 24 horas em Campinas com nota 5,0 no Google. Lave em 40 min e seque em mais 40 min. 3 unidades: Vila Aeroporto, Vila União e San Diego. Melhor preço da região.">
+<meta property="og:title" content="Lavanderia Dona Apôis — Lavanderia Automática 24h em Campinas">
+<meta property="og:description" content="Nota 5,0 no Google ★ Aberta 24 horas ★ 3 unidades em Campinas. 40 min pra lavar + 40 min pra secar.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "#unidade-vila-aeroporto",
+      "name": "Lavanderia Dona Apôis — Vila Aeroporto",
+      "description": "Lavanderia automática self-service aberta 24 horas.",
+      "telephone": "+5519995877551",
+      "address": {"@type": "PostalAddress", "streetAddress": "Av. Jacauna, 1495 - Vila Aeroporto", "addressLocality": "Campinas", "addressRegion": "SP", "postalCode": "13054-107", "addressCountry": "BR"},
+      "openingHours": "Mo-Su 00:00-24:00",
+      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "20"}
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "#unidade-vila-uniao",
+      "name": "Lavanderia Dona Apôis — Vila União",
+      "description": "Lavanderia automática self-service aberta 24 horas.",
+      "telephone": "+5519995877551",
+      "address": {"@type": "PostalAddress", "streetAddress": "R. José Lourenço de Sá, 972 - Parque Res. Vila União", "addressLocality": "Campinas", "addressRegion": "SP", "postalCode": "13041-000", "addressCountry": "BR"},
+      "openingHours": "Mo-Su 00:00-24:00",
+      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "4"}
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "#unidade-san-diego",
+      "name": "Lavanderia Dona Apôis — San Diego",
+      "description": "Lavanderia automática self-service aberta 24 horas.",
+      "telephone": "+5519995877551",
+      "address": {"@type": "PostalAddress", "streetAddress": "R. Jair Ferreira, 620 - San Diego", "addressLocality": "Campinas", "addressRegion": "SP", "postalCode": "13052-573", "addressCountry": "BR"},
+      "openingHours": "Mo-Su 00:00-24:00",
+      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "2"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --ink:#06282F;
+  --ink-soft:#3D5C63;
+  --teal:#0B4A57;
+  --teal-deep:#062E37;
+  --aqua:#14B8CE;
+  --aqua-soft:#E4F7FA;
+  --sand:#FFF8EE;
+  --amber:#F5A524;
+  --wa:#1EBE5D;
+  --wa-dark:#149C4B;
+  --bg:#F7FBFC;
+  --card:#FFFFFF;
+  --border:#DFEBEE;
+  --radius:18px;
+  --shadow:0 8px 30px rgba(6,40,47,.08);
+  --font-display:'Sora',system-ui,sans-serif;
+  --font-body:'Figtree',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+body{font-family:var(--font-body);color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);line-height:1.15;letter-spacing:-.02em}
+.container{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+.section{padding:72px 0}
+@media(min-width:768px){.section{padding:96px 0}}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--aqua);margin-bottom:14px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--aqua);border-radius:2px}
+.section-title{font-size:clamp(26px,4.5vw,40px);font-weight:800;margin-bottom:14px}
+.section-sub{color:var(--ink-soft);max-width:560px;font-size:17px}
+
+/* ---------- Header ---------- */
+.header{position:fixed;inset:0 0 auto 0;z-index:100;transition:background .25s ease,box-shadow .25s ease;padding:14px 0}
+.header.scrolled{background:rgba(255,255,255,.94);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--border)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;font-size:19px;text-decoration:none;color:#fff;transition:color .25s}
+.header.scrolled .logo{color:var(--ink)}
+.logo svg{flex:none}
+.logo .mark-bg{fill:var(--aqua)}
+.nav{display:none;gap:28px;font-weight:600;font-size:15px}
+.nav a{text-decoration:none;color:rgba(255,255,255,.85);transition:color .2s}
+.header.scrolled .nav a{color:var(--ink-soft)}
+.nav a:hover{color:var(--aqua)}
+@media(min-width:900px){.nav{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--font-body);font-weight:700;font-size:16px;padding:14px 26px;border-radius:999px;text-decoration:none;cursor:pointer;border:none;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;min-height:48px}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 20px rgba(30,190,93,.35)}
+.btn-wa:hover{background:var(--wa-dark);transform:translateY(-2px);box-shadow:0 10px 26px rgba(30,190,93,.42)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.22);transform:translateY(-2px)}
+.btn-dark{background:var(--teal-deep);color:#fff}
+.btn-dark:hover{background:var(--teal);transform:translateY(-2px)}
+.header .btn{padding:11px 20px;font-size:15px;min-height:44px}
+.header .btn-wa{display:none}
+@media(min-width:560px){.header .btn-wa{display:inline-flex}}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;background:linear-gradient(160deg,var(--teal-deep) 0%,var(--teal) 55%,#0E6273 100%);color:#fff;padding:140px 0 96px;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:auto 0 -1px 0;height:70px;background:var(--bg);clip-path:ellipse(75% 100% at 50% 100%)}
+.bubbles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.bubble{position:absolute;bottom:-120px;border-radius:50%;background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.35),rgba(255,255,255,.05) 62%);border:1px solid rgba(255,255,255,.18);animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-115vh)}}
+.hero-in{position:relative;display:grid;gap:48px;align-items:center}
+@media(min-width:900px){.hero-in{grid-template-columns:1.1fr .9fr}}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;margin-bottom:22px;backdrop-filter:blur(6px)}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:#3DDC84;box-shadow:0 0 0 0 rgba(61,220,132,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:800;margin-bottom:20px}
+.hero h1 .hl{color:#5EE1F0;position:relative;white-space:nowrap}
+.hero p.lead{font-size:clamp(17px,2.2vw,20px);color:rgba(255,255,255,.85);max-width:520px;margin-bottom:32px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:36px}
+.hero-proof{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;font-size:14.5px;color:rgba(255,255,255,.85)}
+.hero-proof .stars{color:var(--amber);letter-spacing:2px;font-size:16px}
+.hero-proof strong{color:#fff}
+.hero-card{position:relative;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);border-radius:24px;padding:28px;backdrop-filter:blur(10px);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+.hero-card h3{font-size:15px;text-transform:uppercase;letter-spacing:.1em;color:#5EE1F0;margin-bottom:18px}
+.hero-stat{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.hero-stat:last-child{border-bottom:none}
+.hero-stat .ic{flex:none;width:42px;height:42px;border-radius:12px;background:rgba(94,225,240,.15);display:grid;place-items:center}
+.hero-stat .ic svg{width:22px;height:22px;stroke:#5EE1F0}
+.hero-stat b{display:block;font-size:16.5px}
+.hero-stat span{font-size:13.5px;color:rgba(255,255,255,.7)}
+
+/* ---------- Trust bar ---------- */
+.trustbar{background:var(--bg);padding:8px 0 0}
+.trust-in{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:768px){.trust-in{grid-template-columns:repeat(4,1fr)}}
+.trust-item{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px 18px;text-align:center;box-shadow:var(--shadow)}
+.trust-item .num{font-family:var(--font-display);font-weight:800;font-size:clamp(22px,3vw,30px);color:var(--teal)}
+.trust-item .lbl{font-size:13.5px;color:var(--ink-soft);font-weight:500}
+
+/* ---------- Steps ---------- */
+.steps{display:grid;gap:20px;margin-top:44px}
+@media(min-width:768px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{position:relative;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:30px 26px;box-shadow:var(--shadow);transition:transform .25s ease,box-shadow .25s ease}
+.step:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(6,40,47,.12)}
+.step .n{position:absolute;top:-16px;left:24px;width:36px;height:36px;border-radius:12px;background:var(--aqua);color:#fff;font-family:var(--font-display);font-weight:800;display:grid;place-items:center;font-size:16px;box-shadow:0 6px 16px rgba(20,184,206,.4)}
+.step .ic{width:52px;height:52px;border-radius:14px;background:var(--aqua-soft);display:grid;place-items:center;margin-bottom:16px}
+.step .ic svg{width:26px;height:26px;stroke:var(--teal)}
+.step h3{font-size:19px;margin-bottom:8px}
+.step p{color:var(--ink-soft);font-size:15px}
+
+/* ---------- Benefits ---------- */
+.benefits-wrap{background:linear-gradient(180deg,#fff 0%,var(--aqua-soft) 100%)}
+.benefits{display:grid;gap:18px;margin-top:44px}
+@media(min-width:640px){.benefits{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.benefits{grid-template-columns:repeat(3,1fr)}}
+.benefit{display:flex;gap:16px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.benefit .ic{flex:none;width:46px;height:46px;border-radius:13px;background:var(--aqua-soft);display:grid;place-items:center}
+.benefit .ic svg{width:24px;height:24px;stroke:var(--teal)}
+.benefit h3{font-size:17px;margin-bottom:5px}
+.benefit p{font-size:14.5px;color:var(--ink-soft)}
+
+/* ---------- Reviews ---------- */
+.reviews{display:grid;gap:20px;margin-top:44px}
+@media(min-width:768px){.reviews{grid-template-columns:repeat(3,1fr)}}
+.review{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:14px}
+.review .stars{color:var(--amber);font-size:17px;letter-spacing:3px}
+.review p{font-size:15px;color:var(--ink-soft);flex:1}
+.review .who{display:flex;align-items:center;gap:12px}
+.review .avatar{width:42px;height:42px;border-radius:50%;background:var(--teal);color:#fff;font-weight:700;display:grid;place-items:center;font-size:16px}
+.review .who b{display:block;font-size:15px}
+.review .who span{font-size:12.5px;color:var(--ink-soft)}
+.review .owner-reply{background:var(--aqua-soft);border-radius:12px;padding:10px 14px;font-size:13.5px;color:var(--teal);font-weight:600}
+.google-badge{display:inline-flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--border);border-radius:999px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--ink-soft);margin-top:28px;box-shadow:var(--shadow)}
+.google-badge b{color:var(--ink)}
+
+/* ---------- Stores ---------- */
+.stores-wrap{background:var(--teal-deep);color:#fff;position:relative;overflow:hidden}
+.stores-wrap .eyebrow{color:#5EE1F0}
+.stores-wrap .eyebrow::before{background:#5EE1F0}
+.stores-wrap .section-sub{color:rgba(255,255,255,.75)}
+.stores{display:grid;gap:22px;margin-top:48px}
+@media(min-width:900px){.stores{grid-template-columns:repeat(3,1fr)}}
+.store{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:30px 26px;display:flex;flex-direction:column;gap:16px;transition:transform .25s ease,background .25s ease}
+.store:hover{transform:translateY(-6px);background:rgba(255,255,255,.1)}
+.store .tag{align-self:flex-start;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;background:rgba(94,225,240,.15);color:#5EE1F0;border-radius:999px;padding:5px 13px}
+.store .tag.hot{background:rgba(245,165,36,.18);color:#FFC55C}
+.store h3{font-size:21px}
+.store .addr{display:flex;gap:10px;font-size:14.5px;color:rgba(255,255,255,.78);line-height:1.5}
+.store .addr svg{flex:none;width:18px;height:18px;stroke:#5EE1F0;margin-top:2px}
+.store .meta{display:flex;flex-wrap:wrap;gap:8px}
+.store .chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:5px 12px;color:rgba(255,255,255,.85)}
+.store .chip svg{width:13px;height:13px;stroke:#5EE1F0}
+.store .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:auto}
+.store .actions .btn{padding:12px 10px;font-size:14px;border-radius:14px}
+.btn-route{background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.28)}
+.btn-route:hover{background:rgba(255,255,255,.2)}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:760px;margin:44px auto 0}
+.faq details{background:var(--card);border:1px solid var(--border);border-radius:16px;margin-bottom:12px;box-shadow:var(--shadow);overflow:hidden}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;font-weight:700;font-size:16px;min-height:48px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-display);font-size:22px;color:var(--aqua);transition:transform .25s ease;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 24px 20px;color:var(--ink-soft);font-size:15px}
+
+/* ---------- CTA final ---------- */
+.cta-final{background:linear-gradient(140deg,var(--teal) 0%,#0E6273 100%);border-radius:28px;color:#fff;text-align:center;padding:56px 24px;position:relative;overflow:hidden}
+.cta-final::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:rgba(94,225,240,.12);top:-160px;right:-100px}
+.cta-final::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(94,225,240,.1);bottom:-130px;left:-80px}
+.cta-final h2{font-size:clamp(26px,4.5vw,38px);margin-bottom:14px;position:relative}
+.cta-final p{color:rgba(255,255,255,.82);max-width:520px;margin:0 auto 30px;position:relative}
+.cta-final .btn{position:relative}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--teal-deep);color:rgba(255,255,255,.65);padding:48px 0 110px;font-size:14px}
+@media(min-width:768px){.footer{padding-bottom:48px}}
+.footer-in{display:grid;gap:32px}
+@media(min-width:768px){.footer-in{grid-template-columns:1.2fr 1fr 1fr}}
+.footer .logo{font-size:17px;margin-bottom:12px;color:#fff}
+.footer h4{color:#fff;font-size:14px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px;font-family:var(--font-display)}
+.footer ul{list-style:none}
+.footer li{margin-bottom:10px}
+.footer a{text-decoration:none;transition:color .2s}
+.footer a:hover{color:#5EE1F0}
+.footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:36px;padding-top:22px;text-align:center;font-size:13px}
+
+/* ---------- Floating WhatsApp + mobile bar ---------- */
+.wa-float{position:fixed;right:18px;bottom:96px;z-index:90;width:58px;height:58px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(30,190,93,.45);transition:transform .2s ease}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+@media(min-width:768px){.wa-float{bottom:26px}}
+.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:95;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid var(--border);padding:12px 16px calc(12px + env(safe-area-inset-bottom));display:flex;gap:10px}
+.mobile-bar .btn{flex:1;padding:13px 10px;font-size:15px}
+@media(min-width:768px){.mobile-bar{display:none}}
+
+/* ---------- Reveal on scroll ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+:focus-visible{outline:3px solid var(--aqua);outline-offset:3px;border-radius:6px}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header-in">
+    <a class="logo" href="#" aria-label="Lavanderia Dona Apôis — início">
+      <svg width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <rect class="mark-bg" width="40" height="40" rx="12"/>
+        <circle cx="20" cy="20" r="10" stroke="#fff" stroke-width="2.4"/>
+        <path d="M13.5 18c2-2.2 4.5 2.2 6.5 0s4.5 2.2 6.5 0" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="27" cy="10" r="2" fill="#fff" opacity=".85"/>
+      </svg>
+      Dona Apôis
+    </a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#vantagens">Vantagens</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-wa" href="https://wa.me/5519995877551?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Lavanderia%20Dona%20Ap%C3%B4is%20e%20quero%20saber%20mais." target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2 1c.3.1.5.2.6.3 0 .1 0 .7-.3 1.5Z"/></svg>
+      Falar no WhatsApp
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Apresentação">
+  <div class="bubbles" aria-hidden="true" id="bubbles"></div>
+  <div class="container hero-in">
+    <div>
+      <span class="hero-badge"><span class="dot"></span> Aberta agora — funcionamos 24 horas</span>
+      <h1>Roupa lavada e seca <span class="hl">em 40+40 minutos.</span></h1>
+      <p class="lead">Lavanderia automática self-service em Campinas. 40 minutos pra lavar, mais 40 pra secar — você chega, coloca na máquina e vai viver a vida, sem fila, sem espera, sem tanque cheio no fim de semana.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/5519995877551?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20lavar%20minhas%20roupas%20na%20Dona%20Ap%C3%B4is." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2 1c.3.1.5.2.6.3 0 .1 0 .7-.3 1.5Z"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#unidades">Ver as 3 unidades</a>
+      </div>
+      <div class="hero-proof">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span><strong>Nota 5,0 no Google</strong> · 26 avaliações</span>
+        <span>·</span>
+        <span><strong>3 unidades</strong> em Campinas</span>
+      </div>
+    </div>
+    <div class="hero-card" aria-label="Resumo rápido">
+      <h3>Por que a Dona Apôis?</h3>
+      <div class="hero-stat">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+        <div><b>Aberta 24 horas, todos os dias</b><span>Lave de madrugada, de domingo, de feriado</span></div>
+      </div>
+      <div class="hero-stat">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2Z" stroke-linejoin="round"/></svg></span>
+        <div><b>40min pra lavar + 40min pra secar</b><span>Máquinas profissionais de alta capacidade</span></div>
+      </div>
+      <div class="hero-stat">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12c-2.5 4.4-9.5 9-9.5 9Z" stroke-linejoin="round"/></svg></span>
+        <div><b>Melhor preço da região</b><span>Palavra de cliente, não nossa</span></div>
+      </div>
+      <div class="hero-stat">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="m9 12 2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg></span>
+        <div><b>Produtos de qualidade inclusos</b><span>Sabão e amaciante que deixam aroma bom</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<div class="trustbar" aria-label="Números da lavanderia">
+  <div class="container trust-in">
+    <div class="trust-item reveal"><div class="num">5,0 ★</div><div class="lbl">Nota no Google</div></div>
+    <div class="trust-item reveal"><div class="num">24h</div><div class="lbl">Aberta todos os dias</div></div>
+    <div class="trust-item reveal"><div class="num">3</div><div class="lbl">Unidades em Campinas</div></div>
+    <div class="trust-item reveal"><div class="num">40+40</div><div class="lbl">Minutos: lavar + secar</div></div>
+  </div>
+</div>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section class="section" id="como-funciona">
+  <div class="container">
+    <span class="eyebrow">Como funciona</span>
+    <h2 class="section-title">Simples apôis: 3 passos e pronto</h2>
+    <p class="section-sub">Nada de cadastro complicado ou hora marcada. É self-service de verdade — você resolve tudo sozinho, na hora que quiser.</p>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="n">1</span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l1 4H5l1-4Z"/><path d="M5 7h14v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7Z"/><path d="M9 11c1.5 1.5 4.5 1.5 6 0"/></svg></span>
+        <h3>Traga suas roupas</h3>
+        <p>Venha na unidade mais perto de você com sua roupa suja. Cesto, sacola, mala de viagem — o que for. Estamos abertos a qualquer hora.</p>
+      </div>
+      <div class="step reveal">
+        <span class="n">2</span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><circle cx="12" cy="13.5" r="5"/><path d="M9 13.5c1 1.2 2 -1.2 3 0s2 -1.2 3 0" stroke-linecap="round"/><circle cx="7.5" cy="5.5" r=".8" fill="currentColor"/></svg></span>
+        <h3>Coloque na máquina</h3>
+        <p>Máquinas profissionais fáceis de usar, com sabão e amaciante de qualidade já inclusos. Qualquer dúvida, é só chamar no WhatsApp.</p>
+      </div>
+      <div class="step reveal">
+        <span class="n">3</span>
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <h3>Leve tudo limpo e seco</h3>
+        <p>Em cerca de 1h20 no total (40 min lavando + 40 min secando) sua roupa sai lavada, seca e cheirosa — pronta pra guardar. Sem varal, sem esperar dias secando.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VANTAGENS ============ -->
+<section class="section benefits-wrap" id="vantagens">
+  <div class="container">
+    <span class="eyebrow">Vantagens</span>
+    <h2 class="section-title">Feita pra quem não tem tempo a perder</h2>
+    <p class="section-sub">A Dona Apôis nasceu pra libertar você do tanque, do varal e da máquina doméstica que demora uma eternidade.</p>
+    <div class="benefits">
+      <div class="benefit reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+        <div><h3>Aberta 24 horas</h3><p>Sua rotina não segue horário comercial — a gente também não. Madrugada, domingo, feriado: sempre aberta.</p></div>
+      </div>
+      <div class="benefit reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4.5 13.5H11L9.5 22 19 10h-6.5L13 2Z"/></svg></span>
+        <div><h3>Rápida de verdade</h3><p>São 40 minutos de lavagem + 40 minutos de secagem. O que sua máquina de casa faz em um dia inteiro, aqui resolve no intervalo de um episódio.</p></div>
+      </div>
+      <div class="benefit reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3v18M5 8l14 8M19 8 5 16" /></svg></span>
+        <div><h3>Melhor preço da região</h3><p>"Fácil de usar e melhor preço da região!" — avaliação real de cliente no Google. Economia sem abrir mão da qualidade.</p></div>
+      </div>
+      <div class="benefit reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12c-2.5 4.4-9.5 9-9.5 9Z"/></svg></span>
+        <div><h3>Roupas cheirosas</h3><p>Produtos de qualidade inclusos no ciclo. Clientes elogiam o aroma que fica nas roupas — e roupa preta sai sem bolinha branca.</p></div>
+      </div>
+      <div class="benefit reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
+        <div><h3>Ambiente limpo e seguro</h3><p>Espaço claro, organizado e aconchegante. Dá até gosto de esperar — mas se preferir, deixa lavando e volta depois.</p></div>
+      </div>
+      <div class="benefit reveal">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11a4 4 0 1 0-8 0"/><circle cx="13" cy="7" r="4"/><path d="M3 21v-1a6 6 0 0 1 6-6h4"/><path d="m16 19 2 2 4-4"/></svg></span>
+        <div><h3>Atendimento que vira amizade</h3><p>Dúvida? O proprietário responde no WhatsApp e recebe cliente como gente de casa. É por isso que todo mundo vira cliente fixo.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AVALIAÇÕES ============ -->
+<section class="section" id="avaliacoes">
+  <div class="container">
+    <span class="eyebrow">Avaliações reais do Google</span>
+    <h2 class="section-title">Nota 5,0 — e não é por acaso</h2>
+    <p class="section-sub">Todas as nossas unidades têm nota máxima no Google. Olha o que os vizinhos de Campinas andam falando:</p>
+    <div class="reviews">
+      <article class="review reveal">
+        <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+        <p>"Impecável, produtos de qualidade, lugar aconchegante e claro, o atendimento recepcionado pelo proprietário excelente. Já virei cliente fixa com toda certeza."</p>
+        <div class="who">
+          <span class="avatar" aria-hidden="true">R</span>
+          <div><b>Regiane Nunes</b><span>Google · Unidade Vila Aeroporto</span></div>
+        </div>
+        <div class="owner-reply">Resposta do proprietário: "Apôis !!!!"</div>
+      </article>
+      <article class="review reveal">
+        <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+        <p>"Lavei todos os meus uniformes de trabalho — detalhe: é tudo roupa preta — e não ficou com nenhuma bolinha branca. Estão todos de parabéns!"</p>
+        <div class="who">
+          <span class="avatar" aria-hidden="true">P</span>
+          <div><b>Pedro Betancoor</b><span>Google · Local Guide</span></div>
+        </div>
+        <div class="owner-reply">Resposta: "Que bom que gostou da qualidade das nossas máquinas!"</div>
+      </article>
+      <article class="review reveal">
+        <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+        <p>"Adorei a lavanderia, é super eficiente e os produtos usados deixam um aroma ótimo nas roupas. Irei mais vezes."</p>
+        <div class="who">
+          <span class="avatar" aria-hidden="true">N</span>
+          <div><b>Nicole Cristina</b><span>Google · Unidade Vila União</span></div>
+        </div>
+        <div class="owner-reply">Resposta do proprietário: "Apôis, gratidão!!!!"</div>
+      </article>
+    </div>
+    <div style="text-align:center">
+      <span class="google-badge">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.6 12.3c0-.8-.1-1.5-.2-2.3H12v4.5h6a5 5 0 0 1-2.2 3.3v2.7h3.5c2-1.9 3.3-4.7 3.3-8.2Z"/><path fill="#34A853" d="M12 23c3 0 5.5-1 7.3-2.6l-3.5-2.7c-1 .7-2.3 1-3.8 1-2.9 0-5.4-2-6.3-4.6H2.1v2.8A11 11 0 0 0 12 23Z"/><path fill="#FBBC05" d="M5.7 14a6.6 6.6 0 0 1 0-4.2V7H2.1a11 11 0 0 0 0 9.9L5.7 14Z"/><path fill="#EA4335" d="M12 6.4c1.6 0 3.1.6 4.2 1.7l3.2-3.2A11 11 0 0 0 2 7l3.6 2.8C6.6 8.3 9 6.4 12 6.4Z"/></svg>
+        <b>5,0</b> <span class="stars" style="color:var(--amber)">★★★★★</span> · 26 avaliações nas 3 unidades
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ UNIDADES ============ -->
+<section class="section stores-wrap" id="unidades">
+  <div class="container">
+    <span class="eyebrow">Nossas unidades</span>
+    <h2 class="section-title">3 lojas em Campinas — sempre tem uma pertinho</h2>
+    <p class="section-sub">Todas abertas 24 horas, todos os dias, com as mesmas máquinas profissionais e o mesmo padrão nota 5.</p>
+    <div class="stores">
+
+      <article class="store reveal" id="unidade-vila-aeroporto">
+        <span class="tag hot">Matriz · a mais avaliada</span>
+        <h3>Vila Aeroporto</h3>
+        <div class="addr">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Av. Jacauna, 1495 — Vila Aeroporto<br>Campinas/SP · CEP 13054-107</span>
+        </div>
+        <div class="meta">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>24 horas</span>
+          <span class="chip">★ 5,0 · 20 avaliações</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-wa" href="https://wa.me/5519995877551?text=Ol%C3%A1!%20Quero%20usar%20a%20unidade%20Vila%20Aeroporto." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-route" href="https://www.google.com/maps/search/?api=1&query=Lavanderia+Dona+Apois+Av.+Jacauna+1495+Vila+Aeroporto+Campinas" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </article>
+
+      <article class="store reveal" id="unidade-vila-uniao">
+        <span class="tag">Unidade Vila União</span>
+        <h3>Vila União</h3>
+        <div class="addr">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>R. José Lourenço de Sá, 972 — Pq. Res. Vila União<br>Campinas/SP · CEP 13041-000</span>
+        </div>
+        <div class="meta">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>24 horas</span>
+          <span class="chip">★ 5,0 · 4 avaliações</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-wa" href="https://wa.me/5519995877551?text=Ol%C3%A1!%20Quero%20usar%20a%20unidade%20Vila%20Uni%C3%A3o." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-route" href="https://www.google.com/maps/search/?api=1&query=Lavanderia+Dona+Apois+Vila+Uni%C3%A3o+R.+Jos%C3%A9+Louren%C3%A7o+de+S%C3%A1+972+Campinas" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </article>
+
+      <article class="store reveal" id="unidade-san-diego">
+        <span class="tag">Unidade San Diego</span>
+        <h3>San Diego</h3>
+        <div class="addr">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>R. Jair Ferreira, 620 — San Diego<br>Campinas/SP · CEP 13052-573</span>
+        </div>
+        <div class="meta">
+          <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>24 horas</span>
+          <span class="chip">★ 5,0 · 2 avaliações</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-wa" href="https://wa.me/5519995877551?text=Ol%C3%A1!%20Quero%20usar%20a%20unidade%20San%20Diego." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-route" href="https://www.google.com/maps/search/?api=1&query=Lavanderia+Dona+Apois+San+Diego+Rua+Jair+Ferreira+620+Campinas" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="container">
+    <span class="eyebrow">Perguntas frequentes</span>
+    <h2 class="section-title">Ficou com dúvida? Apôis, a gente responde</h2>
+    <div class="faq">
+      <details>
+        <summary>Preciso levar sabão e amaciante?</summary>
+        <div class="a">Não! Os produtos já estão inclusos no ciclo de lavagem — e são produtos de qualidade, elogiados nas avaliações pelo aroma que deixam nas roupas.</div>
+      </details>
+      <details>
+        <summary>Quanto tempo demora pra lavar e secar?</summary>
+        <div class="a">Em média 40 minutos para lavar e mais 40 minutos para secar — cerca de 1h20 no total. Você pode esperar no local ou deixar lavando e voltar pra transferir pra secadora.</div>
+      </details>
+      <details>
+        <summary>Funciona mesmo 24 horas? Até de madrugada?</summary>
+        <div class="a">Sim! As 3 unidades funcionam 24 horas por dia, todos os dias — incluindo domingos e feriados. É a liberdade de lavar roupa no seu horário.</div>
+      </details>
+      <details>
+        <summary>Preciso agendar horário?</summary>
+        <div class="a">Não precisa. É self-service: chegou, usou. Se quiser saber o movimento antes de sair de casa, é só chamar no WhatsApp (19) 99587-7551.</div>
+      </details>
+      <details>
+        <summary>Posso lavar edredom, cobertor e roupa de cama?</summary>
+        <div class="a">Pode! Nossas máquinas profissionais são de alta capacidade e dão conta de edredons, cobertores e peças grandes que não cabem na máquina de casa.</div>
+      </details>
+      <details>
+        <summary>Como funciona o pagamento?</summary>
+        <div class="a">Bem simples, direto na loja. Qualquer dúvida sobre valores e formas de pagamento, chama a gente no WhatsApp que respondemos rapidinho.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="cta-final reveal">
+      <h2>Bora aposentar o tanque?</h2>
+      <p>Chame no WhatsApp e descubra a unidade Dona Apôis mais perto de você. Sua roupa limpa, seca e cheirosa em 40+40 minutos — a qualquer hora.</p>
+      <a class="btn btn-wa" href="https://wa.me/5519995877551?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20conhecer%20a%20Lavanderia%20Dona%20Ap%C3%B4is." target="_blank" rel="noopener" style="font-size:17px;padding:16px 34px">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2 1c.3.1.5.2.6.3 0 .1 0 .7-.3 1.5Z"/></svg>
+        Chamar no WhatsApp agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-in">
+    <div>
+      <a class="logo" href="#" aria-label="Lavanderia Dona Apôis">
+        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect class="mark-bg" width="40" height="40" rx="12"/>
+          <circle cx="20" cy="20" r="10" stroke="#fff" stroke-width="2.4"/>
+          <path d="M13.5 18c2-2.2 4.5 2.2 6.5 0s4.5 2.2 6.5 0" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="27" cy="10" r="2" fill="#fff" opacity=".85"/>
+        </svg>
+        Dona Apôis
+      </a>
+      <p>Lavanderia automática self-service 24 horas em Campinas/SP. Nota 5,0 no Google. Apôis!</p>
+    </div>
+    <div>
+      <h4>Unidades</h4>
+      <ul>
+        <li><a href="#unidade-vila-aeroporto">Vila Aeroporto — Av. Jacauna, 1495</a></li>
+        <li><a href="#unidade-vila-uniao">Vila União — R. José Lourenço de Sá, 972</a></li>
+        <li><a href="#unidade-san-diego">San Diego — R. Jair Ferreira, 620</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/5519995877551" target="_blank" rel="noopener">WhatsApp: (19) 99587-7551</a></li>
+        <li><a href="tel:+5519995877551">Telefone: (19) 99587-7551</a></li>
+        <li>Aberta 24 horas · todos os dias</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container bottom">
+    © <span id="year">2026</span> Lavanderia Dona Apôis — Campinas/SP. Todos os direitos reservados.
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a class="wa-float" href="https://wa.me/5519995877551?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dona%20Ap%C3%B4is." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2 1c.3.1.5.2.6.3 0 .1 0 .7-.3 1.5Z"/></svg>
+</a>
+
+<!-- ============ MOBILE CTA BAR ============ -->
+<div class="mobile-bar">
+  <a class="btn btn-wa" href="https://wa.me/5519995877551?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Dona%20Ap%C3%B4is." target="_blank" rel="noopener">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.5.5c-.2.2-.3.4-.1.7.2.3.8 1.4 1.8 2.2 1.2 1.1 2.3 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.5-.2.8-.1l2 1c.3.1.5.2.6.3 0 .1 0 .7-.3 1.5Z"/></svg>
+    WhatsApp
+  </a>
+  <a class="btn btn-dark" href="#unidades">Unidades</a>
+</div>
+
+<script>
+// Header scrolled state
+const header = document.getElementById('header');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 24);
+onScroll();
+window.addEventListener('scroll', onScroll, {passive:true});
+
+// Bubbles in hero (skipped when reduced motion)
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const wrap = document.getElementById('bubbles');
+  for (let i = 0; i < 14; i++) {
+    const b = document.createElement('span');
+    b.className = 'bubble';
+    const size = 14 + Math.random() * 56;
+    b.style.width = b.style.height = size + 'px';
+    b.style.left = Math.random() * 100 + '%';
+    b.style.animationDuration = 9 + Math.random() * 14 + 's';
+    b.style.animationDelay = -Math.random() * 18 + 's';
+    b.style.opacity = .25 + Math.random() * .5;
+    wrap.appendChild(b);
+  }
+}
+
+// Reveal on scroll
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
